@@ -1,5 +1,10 @@
 {
-    "MD013": false,
-    "MD024": false,
-    "MD025": false
+  "MD013": false,
+  "MD024": false,
+  "MD025": false
+}
+
+    "editor.formatOnSave": true,
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
 }
