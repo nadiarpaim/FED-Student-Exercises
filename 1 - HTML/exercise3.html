@@ -12,8 +12,14 @@
       Welcome to my webpage. Please let me know more about yourself by filling
       out the form below.
     </h3>
-    <form name="myForm" action="/action_page.php" method="get">
+    <form
+      name="myForm"
+      action="/action_page.php"
+      method="get"
+      style="display: flex; flex-direction: column"
+    >
       <fieldset>
+        <legend>Contact form</legend>
         <label for="fname">First name:</label>
         <input
           type="text"
@@ -37,7 +43,7 @@
           type="email"
           name="email"
           id="email"
-          placeholder="Email"
+          placeholder="here@there.com"
           required
         />
         <br />
