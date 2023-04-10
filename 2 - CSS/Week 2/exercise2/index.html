@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MVK8+y+gLIBoVD591QIYicR65iaqukzvf/nwaF0nqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/468f4f2bce.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Week 2 Exercise 2</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">14 Floor LTD</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="gallery.html" target="_blank">Gallery</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get A Quote</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><a href="#" class="action_btn">Get A Quote</a></li>
+      </div>
+    </header>
+
+    <main>
+      <section id="index">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aliquam, atque.
+        </p>
+      </section>
+    </main>
+
+    
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars"
+      }
+    </script>
+  </body>
+</html>
